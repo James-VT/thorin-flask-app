@@ -2,6 +2,8 @@ import os
 import json
 from flask import Flask, render_template
 
+dir(os)
+
 
 app = Flask(__name__)
 
@@ -45,3 +47,6 @@ if __name__ == "__main__":
         host=os.environ.get("IP", "0.0.0.0"),
         port=int(os.environ.get("PORT", "5000")),
         debug=True)
+    # print(__main__)
+    # print("__main__"+1)
+    # print(__name__)
